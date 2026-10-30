@@ -5,6 +5,7 @@
         android:allowBackup="true"
         android:label="JARVIS NEXUS"
         android:usesCleartextTraffic="false"
+        android:hardwareAccelerated="true"
         android:theme="@android:style/Theme.Material.Light.NoActionBar"
         android:supportsRtl="true">
         <activity
