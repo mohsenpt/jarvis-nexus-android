@@ -75,7 +75,7 @@ class MainActivity : Activity() {
             try {
                 startActivity(Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + Uri.encode(number))))
             } catch (_: Exception) {
-                Toast.makeText(this, "برنامه تماس در دسترس نیست.", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this@MainActivity, "برنامه تماس در دسترس نیست.", Toast.LENGTH_SHORT).show()
             }
         }
     }
@@ -88,7 +88,7 @@ class MainActivity : Activity() {
                 intent.putExtra("sms_body", message)
                 startActivity(intent)
             } catch (_: Exception) {
-                Toast.makeText(this, "برنامه پیامک در دسترس نیست.", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this@MainActivity, "برنامه پیامک در دسترس نیست.", Toast.LENGTH_SHORT).show()
             }
         }
     }
